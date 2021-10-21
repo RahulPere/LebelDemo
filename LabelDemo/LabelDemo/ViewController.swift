@@ -24,3 +24,6 @@ class newApp {
     static var demo = newApp()
 }
 
+func show() {
+    print("")
+}
