@@ -7,6 +7,9 @@
 
 import UIKit
 
+func showCurrentData() {
+    
+}
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
