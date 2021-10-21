@@ -9,6 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var label: UILabel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("No change")
