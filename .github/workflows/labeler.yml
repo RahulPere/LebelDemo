@@ -2,7 +2,7 @@ name: Your-Labeler-name
 on: 
   pull_request:
     branches:
-      - master 
+      - dev
 
 jobs:
   label:
