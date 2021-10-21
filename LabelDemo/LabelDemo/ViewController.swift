@@ -20,3 +20,7 @@ class ViewController: UIViewController {
 
 }
 
+class newApp {
+    static var demo = newApp()
+}
+
