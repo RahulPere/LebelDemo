@@ -1,10 +1,9 @@
-Labels:
-- AwesomeLabel:
-  "**"
-- DoNotMerge:
-  "**"
-- BugFix:
-  "**"
-- ReadyForReview:
-  paths:
-    - features/**
+
+AwesomeLabel:
+ - "**"
+DoNotMerge:
+ - "**"
+BugFix:
+ - "**"
+ReadyForReview:
+- "**"
