@@ -13,11 +13,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("No change")
-        print("Another")
     }
-
-
 }
 
 class newApp {
