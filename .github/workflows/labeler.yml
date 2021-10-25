@@ -1,8 +1,7 @@
 name: Your-Labeler-name 
 on: 
   pull_request:
-    branches:
-      - dev
+    types: [review_requested, ready_for_review]
 
 jobs:
   label:
