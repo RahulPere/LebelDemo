@@ -5,4 +5,4 @@ DoNotMerge:
 BugFix:
 - "**"
 ReadyForReview:
-- feature/**/*
+- features/**/*
