@@ -1,5 +1,7 @@
-- name: Ready for review
-  color: "d73a4a"
+Ready for review:
+  - color: "d73a4a"
+  - "**"
 
-- name: Work in progress
-  color: "0075ca"
+Work in progress:
+  - color: "0075ca"
+  - "**"
