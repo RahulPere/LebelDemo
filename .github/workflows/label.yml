@@ -5,26 +5,22 @@
 # file with configuration.  For more information, see:
 # https://github.com/actions/labeler
 
-name: Labeler
-on: [pull_request]
-
-jobs:
-  labeler:
-    runs-on: ubuntu-latest
-    steps:
-      -
-        name: Checkout
-        uses: actions/checkout@v2
-      -
-        name: Run Labeler
-        if: success()
-        uses: crazy-max/ghaction-github-labeler@v3
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          yaml-file: .github/labeler.yml
-          skip-delete: false
-          dry-run: false
-          exclude: |
-            help*
-            *issue
+name: Labeler	
+	on: [pull_request]
+	
+	jobs:
+	label:
+	
+	runs-on: ubuntu-latest
+	permissions:
+	contents: read
+	pull-requests: write
+	
+	steps:
+	- uses: actions/labeler@v2
+	with:
+	repo-token: "${{ secrets.GITHUB_TOKEN }}"
+	configuration-path: .github/labeler.yml
+  #if: github.event.pull_request.draft == true
+  default-labels: ["Work in progresss"]
             
