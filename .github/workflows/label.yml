@@ -6,21 +6,22 @@
 # https://github.com/actions/labeler
 
 name: Labeler	
-	on: [pull_request]
+on: [pull_request]
 	
-	jobs:
-	label:
-	
-	runs-on: ubuntu-latest
-	permissions:
-	contents: read
-	pull-requests: write
-	
-	steps:
-	- uses: actions/labeler@v2
-	with:
-	repo-token: "${{ secrets.GITHUB_TOKEN }}"
-	configuration-path: .github/labeler.yml
+jobs:
+   label:
+     
+     runs-on: ubuntu-latest
+     permissions:
+       contents: read
+       pull-requests: write
+
+     steps:
+     - uses: actions/labeler@v2
+       with:
+         repo-token: "${{ secrets.GITHUB_TOKEN }}"
+	 default-labels: ["Work in progresss"]
+         configuration-path: .github/labeler.yml
      #if: github.event.pull_request.draft == true
-     default-labels: ["Work in progresss"]
+       
             
