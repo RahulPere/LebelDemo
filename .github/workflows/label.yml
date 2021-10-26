@@ -21,6 +21,6 @@ name: Labeler
 	with:
 	repo-token: "${{ secrets.GITHUB_TOKEN }}"
 	configuration-path: .github/labeler.yml
-  #if: github.event.pull_request.draft == true
-  default-labels: ["Work in progresss"]
+     #if: github.event.pull_request.draft == true
+     default-labels: ["Work in progresss"]
             
