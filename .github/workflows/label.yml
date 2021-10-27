@@ -10,7 +10,6 @@ on: [pull_request]
 
 jobs:
   label:
-
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -21,4 +20,4 @@ jobs:
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
         labels: "do not merge"
-        #configuration-path: .github/labeler.yml
+        configuration-path: .github/labeler.yml
