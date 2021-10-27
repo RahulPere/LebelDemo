@@ -1,5 +1,0 @@
-Bugfix: 
-- "**"
-
-Bugs: 
-  - if: github.event.pull_request.draft == true
