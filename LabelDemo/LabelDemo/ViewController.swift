@@ -22,3 +22,7 @@ class ViewController: UIViewController {
 func navigate() {
     print("")
 }
+
+func showcase() {
+    
+}
