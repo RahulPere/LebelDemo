@@ -1,5 +1,0 @@
-Ready:
-- "**"
-
-Bug: 
--  if: github.event.pull_request.draft == true
