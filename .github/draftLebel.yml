@@ -1,5 +1,0 @@
-Work in progress:
-- "**"
-
-bugFix: 
-- if: github.event.pull_request.draft == true
