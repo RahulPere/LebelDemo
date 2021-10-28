@@ -18,6 +18,7 @@ jobs:
        with:
         work_in_progress_label: 'Work in progress'
         ready_to_review_label: 'Ready to review'
-        repo-token: "${{ secrets.GITHUB_TOKEN }}"
+       env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
    
