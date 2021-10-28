@@ -16,5 +16,5 @@ jobs:
     if: github.event.pull_request.draft == false
     - uses: actions/labeler@v2
       with:
-	     repo-token: "${{ secrets.GITHUB_TOKEN }}"
-	     configuration-path: .github/labeler.yml
+        repo-token: "${{ secrets.GITHUB_TOKEN }}"
+	configuration-path: .github/labeler.yml
