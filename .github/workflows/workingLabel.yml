@@ -3,11 +3,18 @@ on: [pull_request]
 jobs:
   working_label:
     runs-on: ubuntu-latest
-    name: Label working progress
+    
     steps:
+    name: Label working progress
+    if: github.event.pull_request.draft == true
       - uses: AlbertHernandez/working-label-action@v1.0.3
         with:
           work_in_progress_label: 'Work in progress'
           ready_to_review_label: 'Ready to review'
-    env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
+    name: action labler
+    if: github.event.pull_request.draft == false
+    - uses: actions/labeler@v2
+      with:
+	     repo-token: "${{ secrets.GITHUB_TOKEN }}"
+	     configuration-path: .github/labeler.yml
