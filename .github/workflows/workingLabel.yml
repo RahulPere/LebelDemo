@@ -1,20 +1,18 @@
-name: Assign work in progress label when pull request is updated
+name: Labeler
 on: [pull_request]
-  
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
 
-      - name: Synchronize labels
-        uses: julb/action-manage-label@v1
-        with:
-          from: .github/config/labels.yml
-          skip_delete: false
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+jobs:
+  label:
+
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+
+    steps:
+    - uses: actions/labeler@v2
+      with:
+        repo-token: "${{ secrets.GITHUB_TOKEN }}"
 
           
    
