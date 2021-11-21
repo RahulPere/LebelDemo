@@ -18,7 +18,3 @@ class ViewController: UIViewController {
         print("")
     }
 }
-
-func navigate() {
-    print("")
-}
