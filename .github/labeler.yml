@@ -1,0 +1,6 @@
+branches:
+  mstaer:
+    - **
+
+branches:
+  branch3: - **
