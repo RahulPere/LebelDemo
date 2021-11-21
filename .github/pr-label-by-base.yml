@@ -1,5 +1,6 @@
 branchLabels:
   master: ['main']
-  multi: ['1', '2', '3']
+  dev: ['dev', 'enhance']
+  feature: ['feature']
 
 
