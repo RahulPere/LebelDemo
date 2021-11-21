@@ -1,11 +1,15 @@
-name: "Pull Request Labeler"
+name: PR Labeler
 on:
-- pull_request_target
+  pull_request:
+    types: [opened]
 
 jobs:
-  triage:
+  pr-labeler:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/labeler@v3
-      with:
-        repo-token: "${{ secrets.GITHUB_TOKEN }}"
+      - uses: nrccua-walter-manger/pr-label-by-base@v0.1-alpha
+        with:
+          configuration-path: .github/pr-label-by-base.yml
+        env:
+          REPO_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
