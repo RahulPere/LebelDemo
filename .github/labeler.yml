@@ -1,3 +1,9 @@
+ReadyForReview:
+- "**"
+
+
+# All
+
 labels:
   'bugFix':
     - '\bbug( Fix)?\b'
