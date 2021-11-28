@@ -4,7 +4,7 @@ labels:
   'crashFix':
     - '\bcrashFix\b'
   'hotFix':
-    - '\hotFix\b'
+    - '\bhotFix\b'
   'feature':
     - '\bfeature\b'
   'enhancement':
