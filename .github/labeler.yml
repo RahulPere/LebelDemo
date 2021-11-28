@@ -6,7 +6,7 @@ labels:
   'hotFix':
     - '\bhot( Fix)?\b'
   'feature':
-    - '\bfeature\b'
+    - '\bfeature?\b'
   'enhancement':
     - '\benhancement\b'
   'documentation':
