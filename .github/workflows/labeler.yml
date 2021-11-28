@@ -6,11 +6,11 @@ jobs:
     
     steps:
     
-     - name: action labler
-       if: github.event.pull_request.draft == false
-       uses: actions/labeler@v2
-       with:
-        repo-token: "${{ secrets.GITHUB_TOKEN }}"
+#      - name: action labler
+#        if: github.event.pull_request.draft == false
+#        uses: actions/labeler@v2
+#        with:
+#         repo-token: "${{ secrets.GITHUB_TOKEN }}"
         
      - name: Label working progress
        if: github.event.pull_request.draft == true
