@@ -1,10 +1,10 @@
 labels:
   'bugFix':
-    - '\bbugFix[s]?\b'
+    - '\bbug( Fix)?\b'
   'crashFix':
     - '\bcrash( Fix)?\b'
   'hotFix':
-    - '\bhotFix\b'
+    - '\bhot( Fix)?\b'
   'feature':
     - '\bfeature\b'
   'enhancement':
