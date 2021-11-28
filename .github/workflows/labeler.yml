@@ -21,4 +21,10 @@ jobs:
         ready_to_review_label: 'Ready to review'
        env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        
+      - name: Check Labels
+      id: labeler
+      uses: jimschubert/labeler-action@v2
+      with:
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
