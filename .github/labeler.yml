@@ -2,7 +2,7 @@ labels:
   'bugFix':
     - '\bbugFix[s]?\b'
   'crashFix':
-    - '\bcrashFix\b'
+    - '\bcrash( Fix)?\b'
   'hotFix':
     - '\bhotFix\b'
   'feature':
