@@ -1,6 +1,0 @@
-branchLabels:
-  master: ['main']
-  dev: ['dev', 'enhance']
-  feature: ['feature']
-
-
