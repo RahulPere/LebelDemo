@@ -1,11 +1,11 @@
 # labeler "simple" schema
 # Comment is applied to both issues and pull requests.
 # If you need a more robust solution, consider the "full" schema.
-comment: |
-  👍 Thanks for this!
-  🏷 I have applied any labels matching special text in your issue.
+# comment: |
+#   👍 Thanks for this!
+#   🏷 I have applied any labels matching special text in your issue.
 
-  Please review the labels and make any necessary changes.
+#   Please review the labels and make any necessary changes.
 
 # Labels is an object where:
 # - keys are labels
