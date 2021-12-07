@@ -1,4 +1,4 @@
-feature: feature/*
+feature: ['feature/*', 'feat/*']
 hotfix: hotfix/*
 bugfix: bugfix/*
 crashfix: crashfix/*
