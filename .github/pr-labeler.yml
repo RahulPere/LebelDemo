@@ -1,3 +1,7 @@
-feature: ['feature/*', 'feat/*']
-fix: fix/*
+feature: feature/*
+hotfix: hotfix/*
 bugfix: bugfix/*
+crashfix: crashfix/*
+enhancement: enhancement/*
+release: release/*
+documentation: documentation/*
