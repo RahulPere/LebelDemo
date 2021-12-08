@@ -13,8 +13,16 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
+          if: github.event.pull_request.draft == false
       - uses: jinmayamashita/ready-for-review@1.0.0
         with:
-         in-progress-label: 'In Progress label'
+         in-progress-label: 'Rahul'
+         ready-for-review-label: 'ReadyForReview label'
+         repo-token: ${{ secrets.GITHUB_TOKEN }}
+         
+         if: github.event.pull_request.draft == true
+      - uses: jinmayamashita/ready-for-review@1.0.0
+        with:
+         in-progress-label: 'Work'
          ready-for-review-label: 'ReadyForReview label'
          repo-token: ${{ secrets.GITHUB_TOKEN }}
