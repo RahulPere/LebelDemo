@@ -19,5 +19,9 @@ jobs:
          ready-for-review-label: 'ReadyForReview'
          repo-token: ${{ secrets.GITHUB_TOKEN }}
          
-      - name: Avengers
-        uses: ryanvade/enforce-active-pr-labeled-action@v1
+      - name: action labler
+        if: github.event.pull_request.draft == false
+        uses: actions/labeler@v2
+        with:
+         repo-token: "${{ secrets.GITHUB_TOKEN }}"
+       
