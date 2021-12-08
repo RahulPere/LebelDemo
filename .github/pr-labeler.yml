@@ -1,4 +1,7 @@
-feature: ['feature/*', 'feat/*']
+feature: ['feature/*'] 
+# we can use array, if we want use mutliple branch name patterns to apply same label
+# Ex. ['feature/*','feat/*']
+
 hotfix: hotfix/*
 bugfix: bugfix/*
 crashfix: crashfix/*
