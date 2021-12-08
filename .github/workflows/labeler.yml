@@ -1,0 +1,13 @@
+name: Assign auto label
+on: [pull_request]
+jobs:
+  working_label:
+    runs-on: ubuntu-latest
+    
+    steps:
+    
+     - name: action labler
+       if: github.event.pull_request.draft == false
+       uses: actions/labeler@v2
+       with:
+        repo-token: "${{ secrets.GITHUB_TOKEN }}"
